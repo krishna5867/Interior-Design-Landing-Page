@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url("assets/interior-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-top: 20px;
+}
+.nav-menu ul li{
+    list-style: none;
+    display: inline-flex;
+    margin: 0px 40px;
+    color: #fff;
+    font-size: 19px;
+    font-size: 21px;
+    font-weight: 800;
+}
+#hr-line{
+    margin-top: 30px;
+    background: #fff;
+    outline: none;
+    border: none;
+}
+.content-text{
+    font-size: 54px;
+    color: #fff;
+    margin: 70px 70px
+}
+.btn{
+    background: transparent;
+    width: 220px;
+    height: 70px;
+    margin-left: 150px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff; 
+    font-size: 20px;
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+button{
+}
+.btn-box{
+    width: 90px;
+    height: 40px;
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px;
+
+}
+.subtext1{
+    background: #bebef316;
+    padding: 10px;
+    width: 250px;
+    height: 150px;
+    margin-left: 850px;
+    margin-top: -300px;
+    color: #fff;
+    font-size: 22px;
+}
+.subtext1 img{
+    margin-left: 20px;
+    width: 80px;
+}
+.subtext1 h5{
+    margin-top: -10px;
+}
+.subtext2{
+    background: #bebef316;
+    padding: 10px;
+    width: 250px;
+    height: 170px;
+    margin-left: 600px;
+    margin-top: 100px;
+    color: #fff;
+    font-size: 22px;
+}
+.subtext2 img{
+    margin-left: 20px;
+    width: 80px;
+}
+/* ----------------------line+round------ */
+
+
+.subtext1::before{
+    content: "";
+    width: 1px;
+    height: 97px;
+    position: absolute;
+    background: #fff;
+    margin-left: 180px;
+    margin-top: 140px;
+}
+.subtext1::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: #fff;
+    margin-left: 176px;
+    margin-top: 114px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+.subtext22::before{
+    content: "";
+    width: 97px;
+    height: 1px;
+    position: absolute;
+    background: #fff;
+    margin-left: 240px;
+    margin-top: -13px;
+}
+.subtext22::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: #fff;
+    margin-left: 174px;
+    margin-top: -60px;
+    border-radius: 50%;
+}
+
+
