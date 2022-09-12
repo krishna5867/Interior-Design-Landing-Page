@@ -9,23 +9,22 @@ body{
     background: url("assets/interior-bg.jpg");
     background-size: cover;
     background-position: center;
-    /* background-repeat: no-repeat; */
 }
 nav{
-    padding: 20px;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .logo{
-    margin-top: 20px;
+    width: 8rem;
 }
 .nav-menu ul li{
     list-style: none;
     display: inline-flex;
-    margin: 0px 40px;
+    margin: 0 1rem;
     color: #fff;
-    font-size: 19px;
-    font-size: 21px;
+    font-size: 1.35rem;
     font-weight: 800;
 }
 #hr-line{
@@ -34,112 +33,133 @@ nav{
     outline: none;
     border: none;
 }
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 14rem 0 3rem;
+}
 .content-text{
-    font-size: 54px;
+    font-size: 3rem;
     color: #fff;
-    margin: 70px 70px
+    padding: 3rem 0 6rem;
 }
 .btn{
     background: transparent;
-    width: 220px;
-    height: 70px;
-    margin-left: 150px;
-    border: 2px solid #fff;
-    border-radius: 50px;
-    color: #fff; 
-    font-size: 20px;
-    margin-top: 40px;
-    font-size: 22px;
+    color: #fff;
+    padding: 1rem 1rem;
+    margin-left: 100px;
+    font-size: 1.2rem;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    outline: none;
 }
-button{
-}
-.btn-box{
-    width: 90px;
-    height: 40px;
-    background: #fff;
-    border-radius: 20px;
-    margin: 20px;
-
-}
-.subtext1{
-    background: #bebef316;
-    padding: 10px;
-    width: 250px;
-    height: 150px;
-    margin-left: 850px;
-    margin-top: -300px;
+.box{
+    padding: 2rem;
+    background:#bebef316;
     color: #fff;
-    font-size: 22px;
-}
-.subtext1 img{
-    margin-left: 20px;
-    width: 80px;
-}
-.subtext1 h5{
-    margin-top: -10px;
-}
-.subtext2{
-    background: #bebef316;
-    padding: 10px;
+    height: 180px;
     width: 250px;
-    height: 170px;
-    margin-left: 600px;
-    margin-top: 100px;
-    color: #fff;
-    font-size: 22px;
+    margin-bottom: 1rem;
 }
-.subtext2 img{
-    margin-left: 20px;
-    width: 80px;
-}
-/* ----------------------line+round------ */
-
-
-.subtext1::before{
-    content: "";
-    width: 1px;
-    height: 97px;
-    position: absolute;
-    background: #fff;
-    margin-left: 180px;
-    margin-top: 140px;
-}
-.subtext1::after{
+.box1 h3::before{
     content: "";
     width: 10px;
     height: 10px;
     position: absolute;
     background: #fff;
-    margin-left: 176px;
-    margin-top: 114px;
+    margin-left: 148px;
+    margin-top: 220px;
     border-radius: 50%;
 }
-
-
-
-
-
-
-.subtext22::before{
-    content: "";
-    width: 97px;
-    height: 1px;
-    position: absolute;
-    background: #fff;
-    margin-left: 240px;
-    margin-top: -13px;
-}
-.subtext22::after{
+.box2 h3::before{
     content: "";
     width: 10px;
     height: 10px;
     position: absolute;
     background: #fff;
-    margin-left: 174px;
-    margin-top: -60px;
+    margin-left: 374px;
+    margin-top: 38px;
     border-radius: 50%;
 }
+.box1 h3::after{
+    content: "";
+    width: 2px;
+    height: 128px;
+    position: absolute;
+    background: #fff;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+.box2 h3::after{
+    /* content: "<i class="fa-solid fa-circle"></i>"; */
+    content: "";
+    width: 158px;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    margin-left: 52px;
+}
+.box2{
+    margin-left: -300px;
+    margin-top: 2rem;
+    z-index: 10;
 
+}
+.fa-solid{
+    color: #fff;
+    font-size: 33px;
+    opacity: 0;
+    position: absolute;
+}
+@media (max-width: 667px){
+    .nav-menu{
+        display: none;
+    }
+    .fa-solid{
+        opacity: 1;
+        right: 20px;
 
+    }
+    .hero{
+        padding: 0;
+    }
+    .content-text{
+        font-size: 2rem;
+        color: #fff;
+        padding: 5rem 2rem 2rem;
+    }
+    .btn{
+        font-size: 1rem;
+        padding: 1rem;
+        margin-left: 50px;
+    }
+    .box{
+        height: 150px;
+        width: 160px;
+        padding: .25rem;
+    }
+    .box1{
+        margin-top: 3rem;
+    }
+    .box2{
+        /* width: 220px; */
+        margin-top: 8rem;
+    }
+    .box1 h3::before{
+        margin-left: 83px;
+        margin-top: 220px;
+    }
+    .box1 h3::after{
+        margin-left: -50px;
+    }
+    .box2 h3::before{
+        margin-left: 308px;
+        margin-top: 60px;
+    }
+    .box2 h3::after{
+        margin-left: 85px;
+    }
+    
+
+}
