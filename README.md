@@ -14,6 +14,6 @@ I have made this landing page by using HTML & CSS
 ## Challenging part of this project ?
    - Making line segment and positioning it just below and in right of boxes.
    
-## [Live link]([https://dance-landing-page.vercel.app/](https://interior-design-landing-page-xi.vercel.app/))
+## [Live link](https://interior-design-landing-page-xi.vercel.app/)
 
 ![Screenshot](https://github.com/krishna5867/Interior-Design-Landing-Page/blob/main/Screenshot.png)
